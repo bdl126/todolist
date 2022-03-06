@@ -12,7 +12,9 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static("public"))
 app.set('view engine', 'ejs');
 
-mongoose.connect("mongodb+srv://admin-bruno:asshole9@cluster0.o3vpt.mongodb.net/todolistDb")
+var mongoKey = process.env.MONGOKEY
+
+mongoose.connect("mongodb+srv://admin-bruno:"+ mongoKey +"@cluster0.o3vpt.mongodb.net/todolistDb")
 
 const itemsSchema = {
   name: String
