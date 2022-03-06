@@ -12,6 +12,9 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "17.6.0"
+  },
   "bugs": {
     "url": "https://github.com/bdl126/todolist/issues"
   },
